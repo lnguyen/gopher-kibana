@@ -1,8 +1,8 @@
 define(['settings'],
 function (Settings) {
   return new Settings({
-    elasticsearch: "{{ .Url }}",
-    default_route     : '/dashboard/file/default.json',
+    elasticsearch: "{{ .ProxyUrl }}",
+    default_route: '/dashboard/file/apps-logs.json',
     kibana_index: "kibana-int",
     panel_names: [
       'histogram',
